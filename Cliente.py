@@ -183,9 +183,9 @@ def verMenu(Clientconn):
         else: seguir=False
     Clientconn.close()
 
-#HOST = str(input("Ingrese IP del servidor: "))
-#PORT = int(input("Ingrese Puerto del servidor: "))
-HOST = "192.168.1.64"
-PORT = 56432
+HOST = str(input("Ingrese IP del servidor: "))
+PORT = int(input("Ingrese Puerto del servidor: "))
+#HOST = "192.168.1.64"
+#PORT = 56432
 Clientconn=http.client.HTTPConnection(HOST,PORT)
 verMenu(Clientconn)
