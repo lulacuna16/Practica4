@@ -11,7 +11,7 @@ def rrq(Server,data,address):
     """
     if (error(data)):
         exit(0)
-    print("Recibi {} de {}".format(str(data), str(address)))
+    print("Recibi una RRQ de {}".format(str(address)))
     x = 2
     name = ""
     while data[x] != 0:
@@ -83,7 +83,7 @@ def wrq(Server,data,adrress):
     """
     if (error(data)):
         exit(0)
-    print("Recibi {} de {}".format(str(data), str(address)))
+    print("Recibi una WRQ de {}".format(str(address)))
     x = 2
     name = ""
     while data[x] != 0:
