@@ -1,0 +1,19 @@
+El protocolo Trivial File Transfer Protocol, en su forma abreviada TFTP,
+es un protocolo cliente-servidor muy simple que regula la transferencia
+de archivos en redes informáticas. Se definió originalmente en junio de
+1981 en el RFC 783, si bien en la actualidad está vigente el estándar RFC
+1350, publicado en 1992. Por defecto, el protocolo TFTP se basa en el
+protocolo mínimo de nivel de transporte UDP (User Datagram Protocol), que
+ofrece la posibilidad de transmitir datos sin necesidad de una conexión fija
+entre los miembros de la comunicación. No obstante, también es posible
+implementar el protocolo TFPT basándose en otros protocolos diferentes.
+Se trata de un protocolo de transferencia de archivos que funciona mediante
+paquetes de datos. Forma parte de la familia de protocolos TCP/IP y fue
+específicamente diseñado para que su implementación fuese lo más sencilla y ligera
+posible. Por esta razón, su funcionalidad consiste principalmente en la lectura
+o escritura de un archivo o un correo electrónico de un servidor. Sin embargo,
+con el protocolo TFTP no es posible listar directorios o establecer permisos
+usando chmod. TFTP utiliza el puerto 69. Posteriormente, la comunicación se produce a
+través de números de puerto asignados individualmente (entre el 1024 y el 65535), que
+el servidor del protocolo TFTP envía al cliente solicitante a través de identificadores
+TID (Transfer Identifiers)
