@@ -74,7 +74,7 @@ def Lectura(name,tam): #Lectura
         content=file.read(tam)
     file.close()
     ultimoAck(address)
-def wrq(Server,data,adrress):
+def wrq(Server,data,address):
     """"
     +-----+---~~-----+---+--~~---+---+---~~-+---+---~~---+---+-------+---+---~~---+---+
     | opc | filename | 0 |  mode | 0 | opt1 | 0 | value1 | 0 | optN  | 0 | valueN | 0 |
