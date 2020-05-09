@@ -105,7 +105,7 @@ def ultimoAck():
     print("\nTerminacion normal\n")
 def Escritura(Client,tam): #Escritura
     numBlock=0
-    file = open("TFTP.txt", 'r') #Archivo del cual se va a extraer el texto
+    file = open("Hagamos un trato_ M. Benedetti.txt", 'r') #Archivo del cual se va a extraer el texto
     content= file.read(tam)
     while len(content)<=tam:
         #Construir paquete data
@@ -152,7 +152,7 @@ def menu(Client,case):
         rrq("TFTP.txt", Modes[1], Client)
     elif case==2:
         wrq("Vacio.txt", Modes[1], Client)
-Server_Address=("192.168.1.64",56432) #IP y puerto del servidor
+Server_Address=("192.168.1.105",56432) #IP y puerto del servidor
 buffer_size=512
 tam=120 #Tamaño para los datos que van a ser enviados
 with socket.socket(socket.AF_INET,socket.SOCK_DGRAM) as Client:
