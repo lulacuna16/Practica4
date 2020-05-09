@@ -165,8 +165,8 @@ def error(paquete): #Paquete de error
         ErrorCode=int.from_bytes(paquete[2:4], byteorder='big')
         print("{}. {}".format(ErrorCode,ErrorCodes(ErrorCode)))
         return True
-HOST="192.168.1.64"
-PORT=69 #El servidor tftp tiene asignado el puerto 69
+HOST="192.168.1.105"
+PORT=56432
 buffer_size=1024
 
 with  socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as Server:
